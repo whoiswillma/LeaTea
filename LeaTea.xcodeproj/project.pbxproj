@@ -7,18 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1B0CAD2A7AD29800C82E24 /* TDLibKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D1B0CAC2A7AD29800C82E24 /* TDLibKit */; };
+		5D1B0CAF2A7AD2A200C82E24 /* TDLibKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D1B0CAE2A7AD2A200C82E24 /* TDLibKit */; };
+		5D1B0CB02A7AD2B900C82E24 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D206B2A7ABA71009C2A0B /* Model.swift */; };
+		5D1B0CB22A7AD60A00C82E24 /* AuthorizationStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B0CB12A7AD60A00C82E24 /* AuthorizationStateView.swift */; };
+		5D1B0CB42A7AE61200C82E24 /* SetStatusFocusFilterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B0CB32A7AE61200C82E24 /* SetStatusFocusFilterIntent.swift */; };
 		5D1D20462A7AB90C009C2A0B /* LeaTeaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D20452A7AB90C009C2A0B /* LeaTeaApp.swift */; };
 		5D1D20482A7AB90C009C2A0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D20472A7AB90C009C2A0B /* ContentView.swift */; };
 		5D1D204A2A7AB90E009C2A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D1D20492A7AB90E009C2A0B /* Assets.xcassets */; };
 		5D1D204D2A7AB90E009C2A0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D1D204C2A7AB90E009C2A0B /* Preview Assets.xcassets */; };
+		5D1D205E2A7ABA24009C2A0B /* LeaTeaIntentsExtensionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D205D2A7ABA24009C2A0B /* LeaTeaIntentsExtensionExtension.swift */; };
+		5D1D20642A7ABA24009C2A0B /* LeaTeaIntentsExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 5D1D205B2A7ABA24009C2A0B /* LeaTeaIntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5D1D206C2A7ABA71009C2A0B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D206B2A7ABA71009C2A0B /* Model.swift */; };
+		5D1D206F2A7AC7BE009C2A0B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D206E2A7AC7BE009C2A0B /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5D1D20622A7ABA24009C2A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D1D203A2A7AB90C009C2A0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D1D205A2A7ABA24009C2A0B;
+			remoteInfo = LeaTeaIntentsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D1D20682A7ABA24009C2A0B /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				5D1D20642A7ABA24009C2A0B /* LeaTeaIntentsExtension.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5D1B0CB12A7AD60A00C82E24 /* AuthorizationStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationStateView.swift; sourceTree = "<group>"; };
+		5D1B0CB32A7AE61200C82E24 /* SetStatusFocusFilterIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStatusFocusFilterIntent.swift; sourceTree = "<group>"; };
 		5D1D20422A7AB90C009C2A0B /* LeaTea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaTea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1D20452A7AB90C009C2A0B /* LeaTeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaTeaApp.swift; sourceTree = "<group>"; };
 		5D1D20472A7AB90C009C2A0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D1D20492A7AB90E009C2A0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D1D204C2A7AB90E009C2A0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D1D205B2A7ABA24009C2A0B /* LeaTeaIntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = LeaTeaIntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1D205D2A7ABA24009C2A0B /* LeaTeaIntentsExtensionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaTeaIntentsExtensionExtension.swift; sourceTree = "<group>"; };
+		5D1D20612A7ABA24009C2A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D1D20692A7ABA3D009C2A0B /* LeaTea.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LeaTea.entitlements; sourceTree = "<group>"; };
+		5D1D206A2A7ABA56009C2A0B /* LeaTeaIntentsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LeaTeaIntentsExtension.entitlements; sourceTree = "<group>"; };
+		5D1D206B2A7ABA71009C2A0B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5D1D206E2A7AC7BE009C2A0B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +68,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1B0CAD2A7AD29800C82E24 /* TDLibKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D1D20582A7ABA24009C2A0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1B0CAF2A7AD2A200C82E24 /* TDLibKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +86,11 @@
 		5D1D20392A7AB90C009C2A0B = {
 			isa = PBXGroup;
 			children = (
+				5D1D20562A7ABA0B009C2A0B /* Shared */,
 				5D1D20442A7AB90C009C2A0B /* LeaTea */,
+				5D1D205C2A7ABA24009C2A0B /* LeaTeaIntentsExtension */,
 				5D1D20432A7AB90C009C2A0B /* Products */,
+				5D7E2A4E2A7AD02E00CCA80C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				5D1D20422A7AB90C009C2A0B /* LeaTea.app */,
+				5D1D205B2A7ABA24009C2A0B /* LeaTeaIntentsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +106,11 @@
 		5D1D20442A7AB90C009C2A0B /* LeaTea */ = {
 			isa = PBXGroup;
 			children = (
+				5D1D20692A7ABA3D009C2A0B /* LeaTea.entitlements */,
 				5D1D20452A7AB90C009C2A0B /* LeaTeaApp.swift */,
+				5D1B0CB12A7AD60A00C82E24 /* AuthorizationStateView.swift */,
 				5D1D20472A7AB90C009C2A0B /* ContentView.swift */,
+				5D1D206E2A7AC7BE009C2A0B /* LoginView.swift */,
 				5D1D20492A7AB90E009C2A0B /* Assets.xcassets */,
 				5D1D204B2A7AB90E009C2A0B /* Preview Content */,
 			);
@@ -67,6 +125,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5D1D20562A7ABA0B009C2A0B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5D1D206B2A7ABA71009C2A0B /* Model.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5D1D205C2A7ABA24009C2A0B /* LeaTeaIntentsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5D1D206A2A7ABA56009C2A0B /* LeaTeaIntentsExtension.entitlements */,
+				5D1D205D2A7ABA24009C2A0B /* LeaTeaIntentsExtensionExtension.swift */,
+				5D1B0CB32A7AE61200C82E24 /* SetStatusFocusFilterIntent.swift */,
+				5D1D20612A7ABA24009C2A0B /* Info.plist */,
+			);
+			path = LeaTeaIntentsExtension;
+			sourceTree = "<group>";
+		};
+		5D7E2A4E2A7AD02E00CCA80C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +161,40 @@
 				5D1D203E2A7AB90C009C2A0B /* Sources */,
 				5D1D203F2A7AB90C009C2A0B /* Frameworks */,
 				5D1D20402A7AB90C009C2A0B /* Resources */,
+				5D1D20682A7ABA24009C2A0B /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D1D20632A7ABA24009C2A0B /* PBXTargetDependency */,
+			);
+			name = LeaTea;
+			packageProductDependencies = (
+				5D1B0CAC2A7AD29800C82E24 /* TDLibKit */,
+			);
+			productName = LeaTea;
+			productReference = 5D1D20422A7AB90C009C2A0B /* LeaTea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D1D205A2A7ABA24009C2A0B /* LeaTeaIntentsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D1D20652A7ABA24009C2A0B /* Build configuration list for PBXNativeTarget "LeaTeaIntentsExtension" */;
+			buildPhases = (
+				5D1D20572A7ABA24009C2A0B /* Sources */,
+				5D1D20582A7ABA24009C2A0B /* Frameworks */,
+				5D1D20592A7ABA24009C2A0B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LeaTea;
-			productName = LeaTea;
-			productReference = 5D1D20422A7AB90C009C2A0B /* LeaTea.app */;
-			productType = "com.apple.product-type.application";
+			name = LeaTeaIntentsExtension;
+			packageProductDependencies = (
+				5D1B0CAE2A7AD2A200C82E24 /* TDLibKit */,
+			);
+			productName = LeaTeaIntentsExtension;
+			productReference = 5D1D205B2A7ABA24009C2A0B /* LeaTeaIntentsExtension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +209,9 @@
 					5D1D20412A7AB90C009C2A0B = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					5D1D205A2A7ABA24009C2A0B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 5D1D203D2A7AB90C009C2A0B /* Build configuration list for PBXProject "LeaTea" */;
@@ -111,11 +223,15 @@
 				Base,
 			);
 			mainGroup = 5D1D20392A7AB90C009C2A0B;
+			packageReferences = (
+				5D1D20532A7AB942009C2A0B /* XCRemoteSwiftPackageReference "TDLibKit" */,
+			);
 			productRefGroup = 5D1D20432A7AB90C009C2A0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5D1D20412A7AB90C009C2A0B /* LeaTea */,
+				5D1D205A2A7ABA24009C2A0B /* LeaTeaIntentsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +246,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5D1D20592A7ABA24009C2A0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +260,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1D206C2A7ABA71009C2A0B /* Model.swift in Sources */,
 				5D1D20482A7AB90C009C2A0B /* ContentView.swift in Sources */,
+				5D1B0CB22A7AD60A00C82E24 /* AuthorizationStateView.swift in Sources */,
+				5D1D206F2A7AC7BE009C2A0B /* LoginView.swift in Sources */,
 				5D1D20462A7AB90C009C2A0B /* LeaTeaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5D1D20572A7ABA24009C2A0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1B0CB02A7AD2B900C82E24 /* Model.swift in Sources */,
+				5D1D205E2A7ABA24009C2A0B /* LeaTeaIntentsExtensionExtension.swift in Sources */,
+				5D1B0CB42A7AE61200C82E24 /* SetStatusFocusFilterIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D1D20632A7ABA24009C2A0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D1D205A2A7ABA24009C2A0B /* LeaTeaIntentsExtension */;
+			targetProxy = 5D1D20622A7ABA24009C2A0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5D1D204E2A7AB90E009C2A0B /* Debug */ = {
@@ -262,8 +406,10 @@
 		5D1D20512A7AB90E009C2A0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LeaTea/LeaTea.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LeaTea/Preview Content\"";
@@ -291,8 +437,10 @@
 		5D1D20522A7AB90E009C2A0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LeaTea/LeaTea.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LeaTea/Preview Content\"";
@@ -311,6 +459,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.williamma.LeaTea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5D1D20662A7ABA24009C2A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LeaTeaIntentsExtension/LeaTeaIntentsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S53MNES6U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeaTeaIntentsExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LeaTeaIntentsExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.williamma.LeaTea.LeaTeaIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D1D20672A7ABA24009C2A0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LeaTeaIntentsExtension/LeaTeaIntentsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S53MNES6U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeaTeaIntentsExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LeaTeaIntentsExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.williamma.LeaTea.LeaTeaIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,7 +540,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5D1D20652A7ABA24009C2A0B /* Build configuration list for PBXNativeTarget "LeaTeaIntentsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D1D20662A7ABA24009C2A0B /* Debug */,
+				5D1D20672A7ABA24009C2A0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D1D20532A7AB942009C2A0B /* XCRemoteSwiftPackageReference "TDLibKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swiftgram/TDLibKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D1B0CAC2A7AD29800C82E24 /* TDLibKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D1D20532A7AB942009C2A0B /* XCRemoteSwiftPackageReference "TDLibKit" */;
+			productName = TDLibKit;
+		};
+		5D1B0CAE2A7AD2A200C82E24 /* TDLibKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D1D20532A7AB942009C2A0B /* XCRemoteSwiftPackageReference "TDLibKit" */;
+			productName = TDLibKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D1D203A2A7AB90C009C2A0B /* Project object */;
 }

@@ -11,7 +11,10 @@ import SwiftUI
 struct LeaTeaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+                    .navigationTitle("Lea Tea")
+            }
         }
     }
 }
