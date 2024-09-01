@@ -75,7 +75,7 @@ struct LoginView: View {
                 }
 
             default:
-                Text(String(describing: authorizationState))
+                AuthorizationStateView(authorizationState: authorizationState!)
             }
         }
     }

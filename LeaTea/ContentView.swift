@@ -98,6 +98,7 @@ struct ContentView: View {
                     Task {
                         try! await telegramApi.close()
                         telegramApi = nil
+                        telegramAuthorizationState = .authorizationStateClosed
                     }
                 }
             }
@@ -116,6 +117,7 @@ struct ContentView: View {
 
         try await telegramApi.close()
         telegramApi = nil
+        telegramAuthorizationState = .authorizationStateClosed
     }
 
     @MainActor
